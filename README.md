@@ -1,2 +1,10 @@
 # rm-coder-decoder
-A coder/decoder script for register machines
+A script for coding/decoding register machines as natural numbers. 
+
+Example usage after loading in ghci.
+(It might be necessary to add type annotations when decoding)
+``` haskell
+p = Program [Halt]
+encodedP = encode p :: Nat
+decode encodedP :: Progam
+```
